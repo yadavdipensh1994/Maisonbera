@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — Maison Béra Steakhouse</title>
+<meta name="description" content="The story of Maison Béra — family-owned luxury steakhouse in Duanesburg, NY since 1974." />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet"/>
+<style>
+:root{--espresso:#1a1612;--espresso-deep:#0f0c0a;--ivory:#f5f1eb;--charcoal:#2d2a28;--gold:#bfa15f;--gold-deep:#8a7343;--burgundy:#5c2d35;--stone:#6b6058;}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Jost',sans-serif;background:var(--espresso-deep);color:var(--ivory);overflow-x:hidden;line-height:1.6}
+.serif{font-family:'Cormorant','Canela','Tiempos Headline',Georgia,serif}
+.hero{min-height:55vh;display:flex;align-items:center;justify-content:center;text-align:center;position:relative;background:linear-gradient(180deg,#0f0c0a 0%,#1a1612 60%,#2d2a28 100%);overflow:hidden}
+.hero h1{font-family:'Cormorant','Canela',Georgia,serif;font-weight:300;font-size:clamp(3.5rem,11vw,7.5rem);line-height:.85;color:var(--ivory);letter-spacing:-.06em;margin-bottom:20px;text-shadow:0 2px 0 rgba(191,161,95,.08)}
+.hero h1 em{font-style:italic;color:var(--gold);font-weight:400}
+main{max-width:1100px;margin:0 auto;padding:100px 32px 160px}
+h2{font-family:'Cormorant',serif;font-size:clamp(2rem,5vw,3.8rem);font-weight:400;color:var(--ivory);letter-spacing:-.06em;margin-bottom:36px;border-bottom:1px solid #3a3530;padding-bottom:24px}
+p{color:#b5ada8;line-height:1.75;font-size:15.5px;margin-bottom:20px}
+.quote-box{background:linear-gradient(135deg,#2d2a28 0%,#1a1612 100%);border:1px solid #3a3530;padding:48px;margin:48px 0;position:relative}
+.quote-box::before{content:'';position:absolute;top:0;left:0;width:60px;height:2px;background:var(--gold)}
+.quote-box blockquote{font-family:'Cormorant',serif;font-style:italic;font-size:24px;color:var(--ivory);line-height:1.5;margin-bottom:16px}
+.quote-box cite{color:var(--gold);font-size:11px;letter-spacing:.2em;text-transform:uppercase}
+nav{position:absolute;top:24px;right:32px;z-index:10;font-size:11px;letter-spacing:.15em;text-transform:uppercase;font-family:'Jost',sans-serif}
+nav a{color:#b5ada8;text-decoration:none;margin-left:20px;transition:color .3s}
+nav a:hover{color:var(--gold)}
+footer{padding:48px 32px;border-top:1px solid #2d2a28;text-align:center}
+footer .brand{font-family:'Cormorant',Georgia,serif;font-size:22px;color:var(--ivory);font-weight:300;margin-bottom:8px}
+footer .brand em{color:var(--gold);font-style:italic}
+</style>
+</head>
+<body>
+<section class="hero">
+  <div style="position:relative;z-index:2;text-align:center;max-width:800px;padding:0 24px;">
+    <p style="text-transform:uppercase;letter-spacing:.35em;font-size:12px;color:var(--gold);margin-bottom:28px;font-weight:300;">Since 1974</p>
+    <h1>Our <em>Story</em></h1>
+  </div>
+</section>
+
+<main>
+  <nav aria-label="Main navigation">
+    <a href="index.html">Home</a>
+    <a href="pages/menu.html">Menu</a>
+    <a href="pages/reservations.html">Reservations</a>
+    <a href="pages/events.html">Events</a>
+    <a href="#" style="color:var(--ivory);font-weight:400;">About</a>
+  </nav>
+
+  <h2>A Family Tradition</h2>
+  <p>For fifty years, Maison Béra has been a private address for those who know that true dining is a craft — not a transaction. The room remains intimate by design, the service deliberate, and the heritage unmistakable.</p>
+  <p>The beef is treated with the reverence it demands. Portions are substantial because they are meant to be shared. The atmosphere — polished wood, amber light, leather — speaks of a tradition that does not apologize for its age.</p>
+
+  <div class="quote-box">
+    <blockquote>"Heritage. Craft. Beef. Hospitality."</blockquote>
+    <cite>— Maison Béra Brand Promise</cite>
+  </div>
+
+  <h2>The Experience</h2>
+  <p>Every visit is designed to feel personal. Our dining room seats a limited number of guests by intention — this is not a chain, this is a family address that has earned its reputation across generations. The service is warm, the atmosphere refined, and the standard consistent.</p>
+  <p>We prefer reservations, especially for weekends, because we prefer to make every visit deliberate and unhurried. For private events, seasonal celebrations, or chef's table experiences, please contact us directly.</p>
+  <p style="margin-top:32px;"><a href="pages/reservations.html" style="display:inline-block;background:var(--gold);color:var(--espresso-deep);padding:18px 48px;text-decoration:none;font-family:'Cormorant',serif;font-size:13px;letter-spacing:.25em;text-transform:uppercase;transition:all .3s ease;" onmouseover="this.style.background='#d4b87a'" onmouseout="this.style.background='var(--gold)'">Make a Reservation</a></p>
+</main>
+
+<footer>
+  <p class="brand">Maison <em>Béra</em></p>
+  <p style="color:#b5ada8;font-size:11px;letter-spacing:.2em;text-transform:uppercase;">Heritage · Craft · Beef · Hospitality</p>
+  <p style="color:#b5ada8;font-size:12px;margin-top:16px;opacity:.5;">© Maison Béra Steakhouse. All rights reserved.</p>
+</footer>
+</body>
+</html>

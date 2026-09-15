@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menu — Maison Béra Steakhouse</title>
+<meta name="description" content="Signature dishes — Chateaubriand, Prime Rib, Delmonico, Filet Mignon — at Maison Béra, Duanesburg, NY.">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet"/>
+<style>
+:root{--espresso:#1a1612;--espresso-deep:#0f0c0a;--ivory:#f5f1eb;--charcoal:#2d2a28;--gold:#bfa15f;--gold-deep:#8a7343;--burgundy:#5c2d35;--stone:#6b6058;}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Jost',sans-serif;background:var(--espresso-deep);color:var(--ivory);overflow-x:hidden;line-height:1.6}
+.serif{font-family:'Cormorant','Canela','Tiempos Headline',Georgia,serif}
+main{max-width:1200px;margin:0 auto;padding:120px 32px 160px}
+.hero{min-height:60vh;display:flex;align-items:center;justify-content:center;text-align:center;position:relative;background:linear-gradient(180deg,#0f0c0a 0%,#1a1612 50%,#2d2a28 100%);overflow:hidden}
+.hero-line{position:absolute;top:15%;left:10%;width:1px;height:100px;background:linear-gradient(to bottom,transparent,var(--gold),transparent);opacity:.35}
+.hero-line2{position:absolute;bottom:20%;right:12%;width:1px;height:70px;background:linear-gradient(to top,transparent,var(--gold-deep),transparent);opacity:.25}
+.hero h1{font-family:'Cormorant','Canela',Georgia,serif;font-weight:300;font-size:clamp(3.5rem,11vw,7.5rem);line-height:.85;color:var(--ivory);letter-spacing:-.06em;margin-bottom:24px;text-shadow:0 2px 0 rgba(191,161,95,.08)}
+.hero h1 em{font-style:italic;color:var(--gold);font-weight:400}
+.hero-sub{text-transform:uppercase;letter-spacing:.35em;font-size:12px;color:var(--gold);margin-bottom:32px;font-weight:300}
+.btn{position:relative;display:inline-block;font-family:'Cormorant','Canela',Georgia,serif;font-weight:300;font-size:13px;letter-spacing:.25em;text-transform:uppercase;color:var(--gold);padding:22px 56px;text-decoration:none;overflow:hidden;border:none;background:transparent;border:1px solid rgba(191,161,95,.2);transition:all .6s cubic-bezier(.23,1,.32,1)}
+.btn:hover{color:var(--ivory);letter-spacing:.35em;border-color:rgba(191,161,95,.6)}
+.menu-section{margin-bottom:100px}
+.menu-section h2{font-family:'Cormorant','Canela',Georgia,serif;font-size:clamp(2.2rem,5vw,3.8rem);font-weight:400;color:var(--ivory);letter-spacing:-.06em;margin-bottom:48px;border-bottom:1px solid #3a3530;padding-bottom:24px}
+.menu-card{border-top:2px solid var(--gold);padding:36px 0;margin-bottom:32px}
+.menu-card h3{font-family:'Cormorant','Canela',Georgia,serif;font-size:28px;font-weight:400;color:var(--ivory);letter-spacing:-.02em;margin-bottom:8px}
+.menu-card .label{color:var(--gold);font-size:11px;letter-spacing:.2em;text-transform:uppercase;margin-bottom:12px}
+.menu-card p{color:#a69d96;line-height:1.75;font-size:15.5px}
+.menu-card .price{color:var(--ivory);font-family:'Cormorant',serif;font-weight:400;font-size:20px;margin-top:12px}
+footer{padding:48px 32px;border-top:1px solid #2d2a28;text-align:center}
+footer .brand{font-family:'Cormorant',Georgia,serif;font-size:22px;color:var(--ivory);font-weight:300;margin-bottom:8px}
+footer .brand em{color:var(--gold);font-style:italic}
+nav{position:absolute;top:24px;right:32px;z-index:10;font-size:11px;letter-spacing:.15em;text-transform:uppercase;font-family:'Jost',sans-serif}
+nav a{color:#b5ada8;text-decoration:none;margin-left:20px;transition:color .3s}
+nav a:hover{color:var(--gold)}
+</style>
+</head>
+<body>
+<section class="hero">
+  <div class="hero-line"></div><div class="hero-line2"></div>
+  <div style="position:relative;z-index:2;text-align:center;max-width:900px;padding:0 24px;">
+    <p class="hero-sub">The Complete Offering</p>
+    <h1>The <em>Menu</em></h1>
+    <p style="color:#b5ada8;max-width:560px;margin:0 auto 36px;font-size:16px;line-height:1.7;font-weight:300;">Every dish reflects the same standard: substantial portions, deliberate craft, and respect for tradition.</p>
+    <a href="#signature" class="btn">Discover Our Signature Dishes</a>
+  </div>
+</section>
+
+<main>
+  <nav aria-label="Main navigation">
+    <a href="index.html">Home</a>
+    <a href="#" style="color:var(--ivory);font-weight:400;">Menu</a>
+    <a href="#">Reservations</a>
+    <a href="#">Events</a>
+  </nav>
+
+  <section id="signature" class="menu-section">
+    <h2>Signature Dishes</h2>
+    <div class="menu-card">
+      <h3>Chateaubriand</h3>
+      <div class="label">Whole Tenderloin — Shared Experience</div>
+      <p>Prepared from the whole beef tenderloin — a substantial shared dining ritual for those who understand that the best experiences are not rushed. Served with ceremony, cut at the table, and presented with the weight of tradition.</p>
+      <div class="price">Market Price</div>
+    </div>
+    <div class="menu-card">
+      <h3>Prime Rib</h3>
+      <div class="label">Generous Portions — Core Specialty</div>
+      <p>A defining expression of our identity — slow-roasted, generously portioned, and rooted in decades of consistent craft. The flavor is deep because the process is patient. Served with au jus and horseradish cream.</p>
+      <div class="price">$52</div>
+    </div>
+  </section>
+
+  <section class="menu-section">
+    <h2>Steaks & Entrees</h2>
+    <div class="menu-card">
+      <h3>Delmonico Steak</h3><p>Classic — substantial, bold, unapologetic. 14oz bone-in ribeye, aged and seared over open flame.</p>
+      <div class="label">Bone-In Ribeye</div><div class="price">$58</div>
+    </div>
+    <div class="menu-card">
+      <h3>Filet Mignon</h3><p>Tender — refined, precise, deliberate. 10oz center-cut tenderloin, prepared medium-rare unless requested otherwise.</p>
+      <div class="label">Center-Cut Tenderloin</div><div class="price">$62</div>
+    </div>
+    <div class="menu-card">
+      <h3>New York Strip</h3><p>Balanced — the ideal cut. 16oz prime strip, marbled, seared, and rested with respect.</p>
+      <div class="label">Prime Strip</div><div class="price">$55</div>
+    </div>
+  </section>
+
+  <section class="menu-section">
+    <h2>Appetizers</h2>
+    <div class="menu-card">
+      <h3>Shrimp Cocktail</h3><p>Fresh — crisp, clean, intentional. Jumbo shrimp with traditional cocktail sauce and fresh lemon.</p><div class="label">Fresh, Crisp</div><div class="price">$22</div>
+    </div>
+    <div class="menu-card">
+      <h3>Antipasto</h3><p>Fresh mozzarella, vine-ripened tomatoes, slow-roasted red peppers, prosciutto, and aged parmesan.</p><div class="label">Traditional</div><div class="price">$26</div>
+    </div>
+    <div class="menu-card">
+      <h3>Beef & Vegetable Soup</h3><p>Warm — traditional, deeply rooted. Slow-simmered beef stock with seasonal vegetables and herbs.</p><div class="label">Warm, Traditional</div><div class="price">$14</div>
+    </div>
+  </section>
+
+  <section class="menu-section">
+    <h2>Sides & Complements</h2>
+    <div class="menu-card">
+      <h3>Seasonal Vegetables & Potatoes</h3><p>Simple — well-prepared, respectful of the ingredient. Roasted or steamed, finished with butter and herbs.</p><div class="label">Simple, Well-Prepared</div><div class="price">$14</div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p class="brand">Maison <em>Béra</em></p>
+  <p style="color:#b5ada8;font-size:11px;letter-spacing:.2em;text-transform:uppercase;">Heritage · Craft · Beef · Hospitality</p>
+  <p style="color:#b5ada8;font-size:12px;margin-top:16px;opacity:.6;">© Maison Béra Steakhouse. All rights reserved.</p>
+</footer>
+</body>
+</html>

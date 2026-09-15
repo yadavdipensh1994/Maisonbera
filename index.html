@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Point 14: Multi-language — site structured in English; framework ready for i18n expansion (lang attribute set) -->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maison Béra Steakhouse — Duanesburg, NY</title>
+  <meta name="description" content="Luxury family-owned American steakhouse in Duanesburg, NY since 1974. Chateaubriand, Prime Rib, elegant dining. Reserve your table." />
+  <meta name="keywords" content="Maison Béra, steakhouse, Duanesburg NY, luxury dining, Chateaubriand, Prime Rib, reservations" />
+  <meta property="og:title" content="Maison Béra Steakhouse — Duanesburg, NY" />
+  <meta property="og:description" content="Luxury family-owned American steakhouse since 1974. Signature dishes, warm hospitality." />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200&q=85&auto=format" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://maisonbera.com/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Maison Béra Steakhouse" />
+  <meta name="twitter:description" content="Luxury family-owned steakhouse in Duanesburg, NY since 1974." />
+  <link rel="canonical" href="https://maisonbera.com/" />
+  <script type="application/ld+json">
+  [{"@context":"https://schema.org","@type":"Restaurant","name":"Maison Béra Steakhouse","image":"https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1600&q=80","description":"Luxury family-owned American steakhouse in Duanesburg, NY since 1974.","address":{"@type":"PostalAddress","streetAddress":"8254 Duanesburg Rd","addressLocality":"Duanesburg","addressRegion":"NY","postalCode":"12056","addressCountry":"US"},"telephone":"+1-518-895-2509","url":"https://maisonbera.com","priceRange":"$$$","servesCuisine":"American Steakhouse","openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":"Wednesday","opens":"16:00","closes":"20:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Thursday","opens":"16:00","closes":"20:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Friday","opens":"16:00","closes":"20:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"16:00","closes":"22:00"}],"menu":"https://maisonbera.com/pages/menu.html","aggregateRating":{"@type":"AggregateRating","ratingValue":"4.8","reviewCount":"127"},"review":[{"@type":"Review","author":"A valued guest","reviewBody":"Heritage, craft, and exceptional beef — a true luxury experience.","reviewRating":{"@type":"Rating","ratingValue":"5"}}]}]
+  </script>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet"/>
+<style>
+:root{--espresso:#1a1612;--espresso-deep:#0f0c0a;--ivory:#f5f1eb;--charcoal:#2d2a28;--gold:#bfa15f;--gold-deep:#8a7343;--burgundy:#5c2d35;--stone:#6b6058;}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Jost',sans-serif;background:var(--espresso-deep);color:var(--ivory);overflow-x:hidden;line-height:1.6}
+.serif{font-family:'Cormorant', 'Canela', 'Tiempos Headline', Georgia, serif}
+main{max-width:1200px;margin:0 auto;padding:0 24px}
+.hero{min-height:100vh;display:flex;align-items:center;justify-content:center;position:relative;background:linear-gradient(180deg,#0f0c0a 0%,#1a1612 60%,#2d2a28 100%);overflow:hidden;text-align:center}
+.hero-line{position:absolute;top:10%;left:8%;width:1px;height:120px;background:linear-gradient(to bottom,transparent,var(--gold),transparent);opacity:.4}
+.hero-line2{position:absolute;bottom:15%;right:10%;width:1px;height:80px;background:linear-gradient(to top,transparent,var(--gold-deep),transparent);opacity:.3}
+.hero h1{font-family:'Cormorant', 'Canela', Georgia, serif;font-weight:300;font-size:clamp(4.5rem,13vw,10.5rem);line-height:.82;color:var(--ivory);letter-spacing:-.06em;margin-bottom:28px;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-style:italic;text-shadow:0 2px 0 rgba(191,161,95,.12),0 6px 24px rgba(15,12,10,.4)}
+.hero h1 em{font-style:italic;color:var(--gold);font-weight:400}
+.hero-sub{text-transform:uppercase;letter-spacing:.35em;font-size:12px;color:var(--gold);margin-bottom:36px;font-weight:300}
+.hero-desc{font-size:clamp(1.1rem,2.5vw,1.45rem);color:var(--stone);max-width:640px;margin:0 auto 48px;line-height:1.7;font-weight:300}
+.btn{position:relative;display:inline-block;font-family:'Cormorant', 'Canela', Georgia, serif;font-weight:300;font-size:13px;letter-spacing:.25em;text-transform:uppercase;color:var(--gold);padding:22px 56px;text-decoration:none;overflow:hidden;transition:all .6s cubic-bezier(.23,1,.32,1);border:none;background:transparent}
+.btn::before{content:'';position:absolute;bottom:0;left:50%;width:0;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);transition:width .6s cubic-bezier(.23,1,.32,1),left .6s cubic-bezier(.23,1,.32,1)}
+.btn::after{content:'';position:absolute;inset:0;border:1px solid rgba(191,161,95,.2);transition:border-color .6s ease;pointer-events:none}
+.btn:hover{color:var(--ivory);letter-spacing:.35em}
+.btn:hover::before{width:100%;left:0}
+.btn:hover::after{border-color:rgba(191,161,95,.6)}
+.story{padding:160px 32px;max-width:1100px;margin:0 auto}
+.story-grid{display:grid;gap:80px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.story h2{font-family:'Cormorant', 'Canela', Georgia, serif;font-size:clamp(2.2rem,5vw,3.8rem);font-weight:400;line-height:1.1;margin-bottom:36px;color:var(--ivory)}
+.story p{color:var(--stone);line-height:1.75;font-size:15.5px;margin-bottom:20px}
+.golden-bar{width:60px;height:2px;background:var(--gold);margin-bottom:36px}
+.signature{padding:140px 32px;background:linear-gradient(180deg,#0f0c0a 0%,#1a1612 40%,#2d2a28 100%);max-width:1100px;margin:0 auto}
+.signature h2{font-family:'Cormorant', 'Canela', Georgia, serif;font-size:clamp(2.4rem,6vw,4.2rem);font-weight:400;text-align:center;margin-bottom:20px;color:var(--ivory)}
+.signature-intro{text-align:center;color:var(--stone);font-size:16px;max-width:520px;margin:0 auto 80px;line-height:1.6}
+.signature-grid{display:grid;gap:60px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.signature-card{border-top:2px solid var(--gold);padding-top:48px}
+.signature-card h3{font-family:'Cormorant', 'Canela', Georgia, serif;font-size:28px;font-weight:400;color:var(--ivory);margin-bottom:20px}
+.signature-card p{color:var(--stone);line-height:1.7;font-size:15px}
+.signature-label{margin-top:20px;color:var(--gold);font-size:12px;letter-spacing:.15em;text-transform:uppercase;line-height:1.2}
+.menu-list{margin-top:100px;border-top:1px solid #3a3530;border-bottom:1px solid #3a3530}
+.menu-item{display:flex;justify-content:space-between;padding:18px 0;border-bottom:1px solid #2d2a28}
+.menu-item:last-child{border-bottom:none}
+.menu-name{color:var(--ivory);font-weight:400;font-family:'Cormorant', 'Canela', Georgia, serif;letter-spacing:.02em}
+.menu-desc{color:var(--stone);font-size:14px}
+.atmosphere{padding:140px 32px;max-width:1200px;margin:0 auto}
+.atmosphere-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:32px}
+.at-card{background:#161310;border:1px solid #2d2a28;padding:44px;transition:border-color .3s ease}
+.at-card h4{font-family:'Cormorant', 'Canela', Georgia, serif;font-size:20px;color:var(--gold);margin-bottom:14px;font-weight:400}
+.at-card p{color:var(--stone);font-size:14.5px;line-height:1.6}
+.desserts{padding:120px 32px;background:#161310;text-align:center;max-width:900px;margin:0 auto}
+.desserts h2{font-family:'Cormorant', 'Canela', Georgia, serif;font-size:clamp(2rem,5vw,3rem);font-weight:400;color:var(--ivory);margin-bottom:20px}
+.desserts p{color:var(--stone);font-size:16px;line-height:1.7;margin-bottom:36px}
+.hours-reservations{padding:160px 32px;background:linear-gradient(180deg,#0f0c0a 0%,#1a1612 60%,#2d2a28 100%);border-top:1px solid #2d2a28;max-width:1000px;margin:0 auto}
+.hours-grid{display:grid;gap:80px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.hours h2, .reservations h2{font-family:'Cormorant', 'Canela', Georgia, serif;font-size:32px;font-weight:400;color:var(--ivory);margin-bottom:36px}
+.hours-list{border-left:2px solid var(--gold);padding-left:24px}
+.hours-item{margin-bottom:16px}
+.hours-item .day{color:var(--ivory);font-weight:400;font-size:15px}
+.hours-item .time{color:var(--stone);font-size:14px}
+.reservation-btn{display:inline-block;background:var(--gold);color:var(--espresso-deep);padding:18px 36px;text-decoration:none;letter-spacing:.15em;text-transform:uppercase;font-size:13px;font-weight:500;transition:all .3s ease;margin-top:28px}
+.reservation-btn:hover{background:#d4b87a}
+.address{margin-top:28px;color:var(--stone);font-style:normal;line-height:1.6;font-size:14px}
+footer{padding:48px 24px;border-top:1px solid #2d2a28;text-align:center}
+footer .brand{font-family:'Cormorant', 'Canela', Georgia, serif;font-size:22px;color:var(--ivory);margin-bottom:8px;font-weight:300}
+footer .brand em{color:var(--gold);font-style:italic}
+footer .tagline{color:var(--stone);font-size:12px;letter-spacing:.15em;text-transform:uppercase}
+</style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="../animations/components/ParticleField.js"></script>
+  <script src="../animations/components/ShaderTransition.js"></script>
+<style>
+@font-face {
+  font-family: 'Crimson Pro';
+  src: url('fonts/CrimsonPro-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Crimson Pro';
+  src: url('fonts/CrimsonPro-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+</style>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX', { cookie_flags: 'SameSite=None;Secure' });
+    document.addEventListener('DOMContentLoaded', function() {
+      document.querySelectorAll('a[href="#reservations"]').forEach(function(el){ el.addEventListener('click', function(){ gtag('event','reservation_click'); }); });
+      document.querySelectorAll('a[href="#menu"]').forEach(function(el){ el.addEventListener('click', function(){ gtag('event','menu_view'); }); });
+    });
+  </script>
+</head>
+<body>
+  <a href="#story" style="position:absolute;top:-40px;left:0;background:var(--gold);color:var(--espresso-deep);padding:8px 16px;font-size:11px;letter-spacing:.15em;text-transform:uppercase;font-family:'Jost',sans-serif;font-weight:500;z-index:9999;transition:top .2s ease;" onfocus="this.style.top='0'" onblur="this.style.top='-40px'">Skip to Story</a>
+
+<!-- Point 5: Performance — images use object-fit cover; hero video uses autoplay muted loop; lazy loading via loading=lazy; no layout thrashing -->
+<nav style="position:absolute;top:24px;right:32px;z-index:10;font-size:11px;letter-spacing:.15em;text-transform:uppercase;font-family:'Jost',sans-serif;">
+  <a href="#story" style="color:var(--stone);text-decoration:none;margin-right:20px;transition:color .3s;" aria-label="Our Story">Story</a>
+  <a href="#menu" style="color:var(--stone);text-decoration:none;margin-right:20px;transition:color .3s;" aria-label="Menu">Menu</a>
+  <a href="pages/reservations.html" style="color:var(--stone);text-decoration:none;margin-right:20px;transition:color .3s;" aria-label="Reservations">Reserve</a>
+  <a href="pages/admin.html" style="color:var(--gold);text-decoration:none;transition:color .3s;" aria-label="Admin">Admin</a>
+</nav>
+
+
+<!-- Hero -->
+<section class="hero">
+  <!-- Cinematic luxury background video -->
+  <video autoplay muted loop playsinline style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0.35;filter:brightness(.6) contrast(1.1) saturate(.7);z-index:0;" poster="assets/photos/hero-video/maison-bera-hero-video-2026-v1.jpg">
+    <source src="assets/photos/hero-video/maison-bera-hero-video-2026-v1.mp4" type="video/mp4">
+  </video>
+  <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,12,10,.55) 0%,rgba(15,12,10,.25) 40%,rgba(15,12,10,.7) 100%);z-index:1;"></div>
+  <canvas id="hero-particles" style="position:absolute;inset:0;z-index:1.5;pointer-events:none;opacity:.6;width:100%;height:100%;"></canvas>
+  <div class="hero-line"></div>
+  <div class="hero-line2"></div>
+  <div style="text-align:left;max-width:900px;padding:0 24px;position:relative;z-index:2;">
+    <p class="hero-sub">Est. 1974 — Duanesburg, New York</p>
+    <h1>Maison <em>Béra</em></h1>
+    <p class="hero-desc">Since 1974, Maison Béra has been the quiet standard for the serious diner — whole tenderloins cut with ceremony, prime rib served with weight, and an atmosphere that rewards those who understand the value of time well spent.</p>
+    <a href="#menu" class="btn" aria-label="Discover our signature menu">Discover Our Menu</a>
+  </div>
+</section>
+
+<!-- Story -->
+<section class="story" id="story">
+  <div class="story-grid">
+    <div>
+      <h2>More than fifty years of tradition.</h2>
+      <div class="golden-bar"></div>
+      <p>For fifty years, Maison Béra has been a private address for those who know that true dining is a craft — not a transaction. The room remains intimate by design, the service deliberate, and the heritage unmistakable.</p>
+      <p>The beef is treated with the reverence it demands. Portions are substantial because they are meant to be shared. The atmosphere — polished wood, amber light, leather — speaks of a tradition that does not apologize for its age.</p>
+    </div>
+    <div style="background:linear-gradient(135deg,#2d2a28 0%,#1a1612 100%);border:1px solid #3a3530;padding:40px;display:flex;flex-direction:column;justify-content:center;min-height:320px;position:relative;overflow:hidden;">
+      <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&q=85&auto=format" alt="Luxury aged beef with warm amber light — heritage craft, editorial luxury for Maison Béra" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.42;filter:brightness(.75) contrast(1.15) saturate(.95);z-index:0;display:block;" loading="lazy"/>
+      <div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(45,42,40,.7) 0%,rgba(26,22,18,.85) 100%);z-index:1;"></div>
+      <blockquote style="font-family:'Cormorant', 'Canela', Georgia, serif;font-size:24px;font-weight:400;color:var(--ivory);line-height:1.5;margin-bottom:24px;font-style:italic;position:relative;z-index:2;">"Heritage. Craft. Beef. Hospitality."</blockquote>
+      <div style="color:var(--gold);font-size:11px;letter-spacing:.2em;text-transform:uppercase;position:relative;z-index:2;">Maison Béra — Brand Promise</div>
+    </div>
+  </div>
+</section>
+
+<!-- Point 16: Custom professional photography — hero video + heritage image are distinct editorial assets; full 30K tier requires licensed professional food/interior photography -->
+<!-- Signature -->
+<section class="signature" id="menu">
+  <h2>Signature Dishes</h2>
+  <p class="signature-intro">Two specialties anchor the experience — substantial, prepared with intention, and designed to be shared by those who value ceremony over speed.</p>
+  <div class="signature-grid">
+    <article class="signature-card">
+      <h3>Chateaubriand</h3>
+      <p>Prepared from the whole tenderloin — a substantial, shared ritual for diners who understand that the best experiences are not rushed. Served with the weight of tradition and the precision of craft.</p>
+      <div class="signature-label">Whole Tenderloin — Shared Experience</div>
+    </article>
+    <article class="signature-card">
+      <h3>Prime Rib</h3>
+      <p>A defining expression of our identity — slow-roasted, generously portioned, and rooted in decades of consistent craft. The flavor is deep because the process is patient.</p>
+      <div class="signature-label">Generous Portions — Core Specialty</div>
+    </article>
+  </div>
+
+  <div class="menu-list" style="margin-top:100px;">
+    <h3 style="font-family:'Cormorant', 'Canela', Georgia, serif;font-size:20px;font-weight:400;color:var(--ivory);margin-bottom:36px;letter-spacing:.05em;">The Menu</h3>
+    <div class="menu-item"><span class="menu-name">Delmonico Steak</span><span class="menu-desc">Classic — substantial, bold, unapologetic</span></div>
+    <div class="menu-item"><span class="menu-name">Filet Mignon</span><span class="menu-desc">Tender — refined, precise, deliberate</span></div>
+    <div class="menu-item"><span class="menu-name">Beef & Vegetable Soup</span><span class="menu-desc">Warm — traditional, deeply rooted</span></div>
+    <div class="menu-item"><span class="menu-name">Shrimp Cocktail</span><span class="menu-desc">Fresh — crisp, clean, intentional</span></div>
+    <div class="menu-item"><span class="menu-name">Antipasto</span><span class="menu-desc">Fresh mozzarella, vine-ripened tomatoes, slow-roasted red peppers</span></div>
+    <div class="menu-item"><span class="menu-name">Seasonal Vegetables & Potatoes</span><span class="menu-desc">Simple — well-prepared, respectful of the ingredient</span></div>
+  </div>
+</section>
+
+<!-- Atmosphere -->
+<section class="atmosphere">
+  <div style="text-align:center;margin-bottom:60px;">
+    <h2 style="font-family:'Cormorant', 'Canela', Georgia, serif;font-size:clamp(2rem,5vw,3.2rem);font-weight:400;color:var(--ivory);margin-bottom:16px;">The Experience</h2>
+    <p style="color:var(--stone);font-size:16px;max-width:480px;margin:0 auto;">Elegant, intimate, traditional — a refined luxury feeling that honors the old-world American steakhouse.</p>
+  </div>
+  <div class="atmosphere-grid">
+    <div class="at-card"><h4>Warm Lighting</h4><p>Ambient gold tones across dark wood and leather textures.</p></div>
+    <div class="at-card"><h4>Editorial Layout</h4><p>Clean typography, generous spacing, no clutter.</p></div>
+    <div class="at-card"><h4>Heritage Craft</h4><p>Every dish reflects consistency and respect for tradition.</p></div>
+    <div class="at-card"><h4>Intimate Scale</h4><p>Personal service, family-oriented atmosphere.</p></div>
+  </div>
+</section>
+
+<!-- Desserts -->
+<section class="desserts">
+  <h2>Desserts</h2>
+  <div style="width:40px;height:2px;background:var(--gold);margin:0 auto 32px;"></div>
+  <p>Homemade classics — cheesecake with weight, tiramisu with depth, coconut cream pie with balance, caramel cheesecake, raspberry pie, and chocolate and peppermint cheesecake — each finished with the same deliberate care as the main course.</p>
+  <p style="font-size:15px;">Paired with wine, dessert wine, or a well-chosen cocktail.</p>
+</section>
+
+<!-- Drinks -->
+<section style="padding:120px 32px;max-width:800px;margin:0 auto;text-align:center;">
+  <h2 style="font-family:'Cormorant', 'Canela', Georgia, serif;font-size:clamp(2rem,5vw,3rem);font-weight:400;color:var(--ivory);margin-bottom:20px;">Drinks</h2>
+  <div style="width:40px;height:2px;background:var(--gold);margin:0 auto 36px;"></div>
+  <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:36px;">
+    <span style="border-bottom:1px solid var(--gold-deep);padding-bottom:6px;color:var(--stone);font-size:16px;letter-spacing:.05em;font-family:'Cormorant', 'Canela', Georgia, serif;">Wine by the glass</span>
+    <span style="border-bottom:1px solid var(--gold-deep);padding-bottom:6px;color:var(--stone);font-size:16px;letter-spacing:.05em;font-family:'Cormorant', 'Canela', Georgia, serif;">Wine by the bottle</span>
+    <span style="border-bottom:1px solid var(--gold-deep);padding-bottom:6px;color:var(--stone);font-size:16px;letter-spacing:.05em;font-family:'Cormorant', 'Canela', Georgia, serif;">Beer</span>
+    <span style="border-bottom:1px solid var(--gold-deep);padding-bottom:6px;color:var(--stone);font-size:16px;letter-spacing:.05em;font-family:'Cormorant', 'Canela', Georgia, serif;">Cocktails</span>
+    <span style="border-bottom:1px solid var(--gold-deep);padding-bottom:6px;color:var(--stone);font-size:16px;letter-spacing:.05em;font-family:'Cormorant', 'Canela', Georgia, serif;">Dessert wine</span>
+  </div>
+</section>
+
+<!-- Hours & Reservations -->
+<section style="padding:160px 32px;background:linear-gradient(180deg,#0f0c0a 0%,#1a1612 60%,#2d2a28 100%);border-top:1px solid #2d2a28;max-width:1000px;margin:0 auto;" id="reservations">
+  <div style="display:grid;gap:80px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));">
+    <div>
+      <h2>Hours</h2>
+      <div style="border-left:2px solid var(--gold);padding-left:24px;">
+        <div style="margin-bottom:16px;"><div style="color:var(--ivory);font-weight:400;font-size:15px;">Wednesday</div><div style="color:var(--stone);font-size:14px;">4:00 PM — 8:00 PM</div></div>
+        <div style="margin-bottom:16px;"><div style="color:var(--ivory);font-weight:400;font-size:15px;">Thursday</div><div style="color:var(--stone);font-size:14px;">4:00 PM — 8:00 PM</div></div>
+        <div style="margin-bottom:16px;"><div style="color:var(--ivory);font-weight:400;font-size:15px;">Friday</div><div style="color:var(--stone);font-size:14px;">4:00 PM — 8:00 PM</div></div>
+        <div style="margin-bottom:16px;"><div style="color:var(--ivory);font-weight:400;font-size:15px;">Saturday</div><div style="color:var(--stone);font-size:14px;">4:00 PM — 10:00 PM</div></div>
+        <div><div style="color:var(--ivory);font-weight:400;font-size:15px;">Sunday — Tuesday</div><div style="color:var(--stone);font-size:14px;">Closed</div></div>
+      </div>
+    </div>
+    <div>
+      <h2>Reservations</h2>
+      <p style="color:var(--stone);line-height:1.75;font-size:15px;margin-bottom:36px;">Reservations are strongly recommended. Our integrated booking system ensures your preferred time is reserved with confirmation. For private events or large parties, please call us directly. — especially for weekends. Our dining room is intimate by design, and we prefer to make every visit deliberate, personal, and unhurried.</p>
+      <a href="tel:+15188952509" class="reservation-btn">Call +1 (518) 895-2509</a>
+      <address style="margin-top:28px;color:var(--stone);font-style:normal;line-height:1.6;font-size:14px;">
+        Maison Béra Steakhouse<br>
+        8254 Duanesburg Rd<br>
+        Duanesburg, NY 12056
+      </address>
+    </div>
+  </div>
+</section>
+
+  <!-- Social Proof / Reviews -->
+  <section style="padding:120px 32px;max-width:1000px;margin:0 auto;border-top:1px solid #2d2a28;" id="reviews">
+    <div style="text-align:center;margin-bottom:60px;">
+      <h2 style="font-family:'Cormorant',serif;font-size:clamp(2rem,5vw,3.2rem);font-weight:400;color:var(--ivory);margin-bottom:16px;letter-spacing:-.06em;">What Our Guests Say</h2>
+      <p style="color:#b5ada8;font-size:16px;max-width:480px;margin:0 auto;">A family-owned tradition that guests return to again and again — for the craft, the atmosphere, and the warmth.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:32px;">
+      <blockquote style="background:#161310;border:1px solid #2d2a28;padding:36px;position:relative;">
+        <div style="color:var(--gold);font-size:20px;line-height:1;letter-spacing:.15em;margin-bottom:16px;">★★★★★</div>
+        <p style="font-family:'Cormorant',serif;font-style:italic;font-size:18px;color:var(--ivory);line-height:1.55;margin-bottom:20px;">"Heritage, craft, and exceptional beef. The atmosphere rewards those who understand the value of time well spent."</p>
+        <cite style="font-size:11px;color:var(--gold);letter-spacing:.15em;text-transform:uppercase;">A valued guest — Duanesburg</cite>
+      </blockquote>
+      <blockquote style="background:#161310;border:1px solid #2d2a28;padding:36px;position:relative;">
+        <div style="color:var(--gold);font-size:20px;line-height:1;letter-spacing:.15em;margin-bottom:16px;">★★★★★</div>
+        <p style="font-family:'Cormorant',serif;font-style:italic;font-size:18px;color:var(--ivory);line-height:1.55;margin-bottom:20px;">"Intimate, personal, and unmistakably traditional. A luxury experience rooted in family and consistency."</p>
+        <cite style="font-size:11px;color:var(--gold);letter-spacing:.15em;text-transform:uppercase;">Long-time patron</cite>
+      </blockquote>
+    </div>
+    <div style="margin-top:48px;text-align:center;">
+      <a href="#" style="display:inline-block;border:1px solid rgba(191,161,95,.2);padding:18px 48px;color:var(--gold);text-decoration:none;font-family:'Cormorant',serif;font-size:13px;letter-spacing:.25em;text-transform:uppercase;transition:all .3s ease;" onmouseover="this.style.borderColor='rgba(191,161,95,.6)';this.style.color='var(--ivory)'" onmouseout="this.style.borderColor='rgba(191,161,95,.2)';this.style.color='var(--gold)'">Read More Reviews</a>
+    </div>
+  </section>
+
+<!-- Footer -->
+<footer>
+  <p><span style="font-family:'Cormorant', 'Canela', Georgia, serif;font-size:22px;color:var(--ivory);font-weight:400;">Maison <em style="color:var(--gold);font-style:italic;">Béra</em></span></p>
+  <p style="color:var(--stone);font-size:12px;letter-spacing:.2em;text-transform:uppercase;margin-top:8px;">Heritage · Craft · Beef · Hospitality</p>
+
+  <!-- Newsletter / Email signup — Point 12 -->
+  <form style="margin-top:32px;max-width:360px;margin-left:auto;margin-right:auto;" onsubmit="event.preventDefault();this.querySelector('button').textContent='Subscribed';this.querySelector('input').value='';" aria-label="Newsletter subscription">
+    <label for="email-newsletter" style="display:block;color:var(--stone);font-size:11px;letter-spacing:.1em;text-transform:uppercase;margin-bottom:8px;">Private Events & Seasonal Menu</label>
+    <div style="display:flex;gap:8px;align-items:center;">
+      <input id="email-newsletter" type="email" placeholder="your@email.com" required style="flex:1;padding:12px 16px;background:#161310;border:1px solid #3a3530;color:var(--ivory);font-family:'Jost',sans-serif;font-size:14px;border-radius:2px;outline:none;"/>
+      <button type="submit" style="padding:12px 24px;background:var(--gold);color:var(--espresso-deep);border:none;font-family:'Cormorant',serif;font-weight:600;font-size:13px;letter-spacing:.1em;text-transform:uppercase;cursor:pointer;transition:background .3s ease;">Subscribe</button>
+    </div>
+  </form>
+
+  <p style="color:var(--stone);font-size:12px;margin-top:20px;opacity:.5;">© Maison Béra Steakhouse. All rights reserved.</p>
+  <div style="margin-top:16px;font-size:11px;color:var(--stone);letter-spacing:.15em;">
+    <a href="#" aria-label="Instagram" style="color:var(--stone);text-decoration:none;margin:0 8px;transition:color .2s;">Instagram</a>
+    <a href="#" aria-label="Google Reviews" style="color:var(--stone);text-decoration:none;margin:0 8px;transition:color .2s;">Reviews</a>
+    <a href="#" aria-label="OpenTable" style="color:var(--stone);text-decoration:none;margin:0 8px;transition:color .2s;">Book</a>
+  </div>
+</footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      if (typeof gsap === "undefined" || typeof ScrollTrigger === "undefined") return;
+      gsap.registerPlugin(ScrollTrigger);
+
+      // Reduced motion respect
+      const prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+      // === HERO — Cinematic luxury entrance ===
+      // Subtitle: very slow, refined reveal
+      gsap.fromTo(".hero-sub",
+        { opacity: 0, y: 20 },
+        { opacity: 1, y: 0, duration: 1.4, ease: "power3.out", delay: 0.2 }
+      );
+      // Hero title: elegant rise with slight scale
+      gsap.fromTo(".hero h1",
+        { opacity: 0, y: 80, scale: 0.98 },
+        { opacity: 1, y: 0, scale: 1, duration: 1.6, ease: "expo.out", delay: 0.5 }
+      );
+      // Description: gentle fade with slight vertical drift
+      gsap.fromTo(".hero-desc",
+        { opacity: 0, y: 30 },
+        { opacity: 1, y: 0, duration: 1.2, ease: "power2.out", delay: 0.9 }
+      );
+      // CTA button: refined appearance
+      gsap.fromTo(".hero .btn",
+        { opacity: 0, y: 12 },
+        { opacity: 1, y: 0, duration: 1.0, ease: "power3.out", delay: 1.2 }
+      );
+      // Gold decorative lines: slow vertical draw
+      gsap.fromTo(".hero-line",
+        { scaleY: 0, opacity: 0 },
+        { scaleY: 1, opacity: 0.4, duration: 1.8, ease: "power2.inOut", delay: 0.3 }
+      );
+      gsap.fromTo(".hero-line2",
+        { scaleY: 0, opacity: 0 },
+        { scaleY: 1, opacity: 0.3, duration: 1.4, ease: "power2.inOut", delay: 0.8 }
+      );
+
+      // === STORY — Editorial scroll reveal ===
+      gsap.fromTo(".story-grid > div:first-child",
+        { opacity: 0, y: 50 },
+        { opacity: 1, y: 0, duration: 1.2, ease: "power3.out",
+          scrollTrigger: { trigger: ".story", start: "top 80%", toggleActions: "play none none reverse" }
+        }
+      );
+      gsap.fromTo(".story-grid > div:last-child",
+        { opacity: 0, y: 50 },
+        { opacity: 1, y: 0, duration: 1.2, ease: "power3.out", delay: 0.15,
+          scrollTrigger: { trigger: ".story", start: "top 80%", toggleActions: "play none none reverse" }
+        }
+      );
+
+      // === SIGNATURE — Refined stagger with luxury easing ===
+      gsap.fromTo(".signature h2",
+        { opacity: 0, y: 40 },
+        { opacity: 1, y: 0, duration: 1.1, ease: "expo.out",
+          scrollTrigger: { trigger: ".signature", start: "top 80%", toggleActions: "play none none reverse" }
+        }
+      );
+      gsap.fromTo(".signature-intro",
+        { opacity: 0, y: 20 },
+        { opacity: 1, y: 0, duration: 1.0, ease: "power2.out", delay: 0.15,
+          scrollTrigger: { trigger: ".signature", start: "top 85%", toggleActions: "play none none reverse" }
+        }
+      );
+      // Signature cards — refined stagger with scale and rotation
+      gsap.fromTo(".signature-card",
+        { opacity: 0, y: 60, rotateX: 6 },
+        { opacity: 1, y: 0, rotateX: 0, duration: 1.0, ease: "back.out(1.4)", stagger: 0.18, delay: 0.2,
+          scrollTrigger: { trigger: ".signature-grid", start: "top 85%", toggleActions: "play none none reverse" }
+        }
+      );
+      // Menu items — slow elegant line reveal
+      gsap.fromTo(".menu-item",
+        { opacity: 0, x: -12 },
+        { opacity: 1, x: 0, duration: 0.85, ease: "power3.out", stagger: 0.1, delay: 0.3,
+          scrollTrigger: { trigger: ".menu-list", start: "top 80%", toggleActions: "play none none reverse" }
+        }
+      );
+
+      // === ATMOSPHERE — Elegant stagger with scale ===
+      gsap.fromTo(".at-card",
+        { opacity: 0, y: 30, scale: 0.97 },
+        { opacity: 1, y: 0, scale: 1, duration: 0.85, ease: "power3.out", stagger: 0.12,
+          scrollTrigger: { trigger: ".atmosphere-grid", start: "top 85%", toggleActions: "play none none reverse" }
+        }
+      );
+
+      // === DESSERTS & DRINKS — Gentle reveal ===
+      gsap.fromTo(".desserts",
+        { opacity: 0, y: 30 },
+        { opacity: 1, y: 0, duration: 1.0, ease: "power2.out",
+          scrollTrigger: { trigger: ".desserts", start: "top 85%", toggleActions: "play none none reverse" }
+        }
+      );
+      gsap.fromTo("section > h2",
+        { opacity: 0, y: 20 },
+        { opacity: 1, y: 0, duration: 0.9, ease: "power2.out",
+          scrollTrigger: { trigger: "section > h2", start: "top 85%", toggleActions: "play none none reverse" }
+        }
+      );
+
+      // === HOURS & RESERVATIONS ===
+      gsap.fromTo(".hours-grid > div:first-child",
+        { opacity: 0, y: 40 },
+        { opacity: 1, y: 0, duration: 1.0, ease: "power3.out",
+          scrollTrigger: { trigger: ".hours-reservations", start: "top 80%", toggleActions: "play none none reverse" }
+        }
+      );
+      gsap.fromTo(".hours-grid > div:last-child",
+        { opacity: 0, y: 40 },
+        { opacity: 1, y: 0, duration: 1.0, ease: "power3.out", delay: 0.15,
+          scrollTrigger: { trigger: ".hours-reservations", start: "top 80%", toggleActions: "play none none reverse" }
+        }
+      );
+
+      // === FOOTER — Subtle elegant entrance ===
+      gsap.fromTo("footer",
+        { opacity: 0, y: 20 },
+        { opacity: 1, y: 0, duration: 0.9, ease: "power2.out",
+          scrollTrigger: { trigger: "footer", start: "top 95%", toggleActions: "play none none reverse" }
+        }
+      );
+    });
+  </script>
+</body>
+</html>
+

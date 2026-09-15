@@ -1,0 +1,44 @@
+{
+  "restaurant": "Maison Béra Steakhouse",
+  "established": 1974,
+  "location": "Duanesburg, NY",
+  "menu_version": "2026.09",
+  "sections": [
+    {
+      "name": "Signature Dishes",
+      "items": [
+        {"name":"Chateaubriand","label":"Whole Tenderloin — Shared Experience","description":"Prepared from the whole tenderloin — substantial shared ritual.","price":"Market Price"},
+        {"name":"Prime Rib","label":"Generous Portions — Core Specialty","description":"Slow-roasted, generously portioned — deep flavor from patient craft.","price":"$52"}
+      ]
+    },
+    {
+      "name": "Steaks & Entrees",
+      "items": [
+        {"name":"Delmonico Steak","label":"Bone-In Ribeye","description":"Classic — substantial, bold, unapologetic. 14oz aged ribeye.","price":"$58"},
+        {"name":"Filet Mignon","label":"Center-Cut Tenderloin","description":"Tender — refined, precise, deliberate. 10oz tenderloin.","price":"$62"},
+        {"name":"New York Strip","label":"Prime Strip","description":"Balanced — the ideal cut. 16oz prime strip, marbled.","price":"$55"}
+      ]
+    },
+    {
+      "name": "Appetizers",
+      "items": [
+        {"name":"Shrimp Cocktail","label":"Fresh, Crisp","description":"Jumbo shrimp with traditional cocktail sauce and fresh lemon.","price":"$22"},
+        {"name":"Antipasto","label":"Traditional","description":"Fresh mozzarella, vine-ripened tomatoes, slow-roasted red peppers.","price":"$26"},
+        {"name":"Beef & Vegetable Soup","label":"Warm, Traditional","description":"Slow-simmered beef stock with seasonal vegetables and herbs.","price":"$14"}
+      ]
+    }
+  ],
+  "hours": {
+    "Wednesday":"4:00 PM — 8:00 PM",
+    "Thursday":"4:00 PM — 8:00 PM",
+    "Friday":"4:00 PM — 8:00 PM",
+    "Saturday":"4:00 PM — 10:00 PM",
+    "Sunday":"Closed",
+    "Monday":"Closed",
+    "Tuesday":"Closed"
+  },
+  "contact": {
+    "phone":"+1-518-895-2509",
+    "address":"8254 Duanesburg Rd, Duanesburg, NY 12056"
+  }
+}

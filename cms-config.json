@@ -1,0 +1,11 @@
+{
+  "cms_version": "1.0",
+  "content_types": [
+    {"name":"Menu Section","fields":["name","items"],"editable":true},
+    {"name":"Hours","fields":["day","time"],"editable":true},
+    {"name":"Contact","fields":["phone","address"],"editable":true},
+    {"name":"Restaurant Info","fields":["restaurant","established","location"],"editable":true}
+  ],
+  "api_endpoint": "/api/content",
+  "storage_format": "json"
+}

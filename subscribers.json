@@ -1,0 +1,17 @@
+[
+  {
+    "email": "new@test.com",
+    "subscribedAt": "2026-09-13T05:05:05.269Z",
+    "source": "website_footer"
+  },
+  {
+    "email": "maria.rossi@example.com",
+    "subscribedAt": "2026-09-13T05:08:00.417Z",
+    "source": "website_footer"
+  },
+  {
+    "email": "subscribe@test.com",
+    "subscribedAt": "2026-09-13T09:42:42.665Z",
+    "source": "website_footer"
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1789275905304",
+    "createdAt": "2026-09-13T05:05:05.304Z",
+    "status": "received",
+    "name": "Test",
+    "email": "t@test.com",
+    "message": "Hello"
+  },
+  {
+    "id": "1789276135623",
+    "createdAt": "2026-09-13T05:08:55.623Z",
+    "status": "received",
+    "name": "Maria Rossi",
+    "email": "maria.rossi@example.com",
+    "message": "Interested in private event for 20 guests on Oct 12."
+  },
+  {
+    "id": "1789292588965",
+    "createdAt": "2026-09-13T09:43:08.965Z",
+    "status": "received",
+    "name": "Contact Tester",
+    "email": "contact@test.com",
+    "message": "Testing contact form for private event."
+  }
+]
